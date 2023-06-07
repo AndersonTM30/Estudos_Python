@@ -1,0 +1,5 @@
+INFO - teste
+2023-06-07 07:12:59,329 - WARNING - invalid literal for int() with base 10: 'açskldjga'
+07-06-2023 07:17:52 - [WARNING] - invalid literal for int() with base 10: 'agçlkja' - (5_log_na_pratica.py)
+07-06-2023 07:19:51 - [WARNING] - invalid literal for int() with base 10: 'açglkajg' - (5_log_na_pratica.py) - 18 - <module>
+07/06/2023 07:23:47 - [WARNING] - invalid literal for int() with base 10: 'asçlkjaga' - (5_log_na_pratica.py:18 - <module>)
