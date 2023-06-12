@@ -1,6 +1,6 @@
 """
 Sheets - São as páginas de uma planilha
-Workboot - É o arquivo que contém estas páginas
+Workbook - É o arquivo que contém estas páginas
 """
 
 import openpyxl as excel
