@@ -21,6 +21,13 @@ def criar_postagem():
     postagens.append(postagem)
     return jsonify(postagem, 200)
 
+# atualizar uma postagem existente
+@app.route('/postagens/<int:indice>', methods=['PUT'])
+def atualizar_postagem_por_indice(indice):
+    postagem = request.get_json()
+    postagens[indice].update(postagem)
+
+    return jsonify(postagens[indice], 200)
 
 # Executando o servidor
 app.run(port=5000, host='localhost', debug=True)
