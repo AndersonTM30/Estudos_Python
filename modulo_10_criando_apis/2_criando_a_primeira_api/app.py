@@ -29,5 +29,15 @@ def atualizar_postagem_por_indice(indice):
 
     return jsonify(postagens[indice], 200)
 
+# deletear uma postagem por id
+@app.route('/postagens/<int:indice>', methods=['DELETE'])
+def excluir_postagem(indice):
+    try:
+        if postagens[indice] is not None:
+            del postagens[indice]
+            return jsonify(f'Postagem {postagens[indice]} foi excluída com sucesso!', 200)
+    except:
+        return jsonify('Não foi possível encontrar a postagem para exclusão', 404)
+
 # Executando o servidor
 app.run(port=5000, host='localhost', debug=True)
